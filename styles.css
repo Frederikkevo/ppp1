@@ -1,0 +1,138 @@
+* {
+    margin: 1px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #F0E5CF; 
+    color: #333;
+}
+
+.container {
+    text-align: center;
+    margin-top: 50px;
+}
+
+h1 {
+    font-size: 3em;
+    color: #466d1d;
+}
+
+.profile-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.profile-img {
+    position: relative;
+    margin-bottom: 40px;
+}
+
+#profile-pic {
+    width: 250px; 
+    height: auto;
+    border-radius: 50%;
+    border: 6px solid #6C584C; 
+}
+
+#name {
+    font-size: 1.8em;
+    margin-top: 15px;
+    color: #6C584C;
+}
+
+.info-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 20px;
+    max-width: 800px;
+}
+
+.card {
+    background-color: #a1bb95; 
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card p {
+    color: #333;
+    font-size: 1.1em;
+}
+
+.about-content {
+    max-width: 600px;
+    text-align: left;
+}
+
+h2 {
+    color: #113d1b;
+    margin-top: 40px;
+    font-size: 2em; }
+
+
+    .experience-content, .education-content, .skills-content {
+        margin-top: 20px;
+        text-align: left;
+        max-width: 800px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .job, .edu {
+        margin-bottom: 15px;
+    }
+    
+    .job h3, .edu h3 {
+        color: #0b3f0f; 
+    }
+
+.footer-content {
+    background-color: #969f83; 
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-content {
+    background-color: #7c8476; 
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-links {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-links li {
+    display: inline;
+    margin: 0 10px;
+}
+
+.footer-links a {
+    color: white; 
+    text-decoration: none; 
+}
+
+.footer-links a:hover {
+    color: #cdeac0; 
+}
+
+footer p {
+    margin-top: 10px;
+}
