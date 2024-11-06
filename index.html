@@ -3,48 +3,99 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Who Am I - [Dit Navn]</title>
+    <title>Who Am I - Frederikke Volkdal</title>
+    <link rel="stylesheet" href="global.css" />
     <link rel="stylesheet" href="styles.css" />
-    <link rel="icon" href="/img/favicon.png" type="image/x-icon" />
+    <link rel="Icon" href="/img/favicon.png" />
     <script defer src="script.js"></script>
   </head>
   <body>
-    <div class="container">
-      <h1>Who Am I?</h1>
-      <div class="profile-section" id="whoami">
-        <div class="profile-img">
-          <img src="/img/file.png" alt="Mit portræt" id="profile-pic" />
-          <h2 id="name">Frederikke Volkdal</h2>
-        </div>
-        <div class="info-cards">
-          <div class="card" id="card1">
-            <p>A multimedia student who studies at KEA</p>
+    <button id="scrollUpBtn" onclick="scrollToTop()">↑</button>
+
+    <header>
+      <div class="header-left">
+        <div class="burger-menu" id="burger-menu">☰</div>
+        <a href="https://github.com/frederikkevo" target="_blank">
+          <img
+            src="img/githubicon.png"
+            alt="GitHub Icon"
+            class="social-icon-large"
+          />
+        </a>
+        <a
+          href="https://app.netlify.com/teams/frederikkevo/sites"
+          target="_blank"
+        >
+          <img
+            src="/img/netlifyicon.png"
+            alt="Netlify Icon"
+            class="social-icon-large"
+          />
+        </a>
+      </div>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#whoami">Who Am I</a></li>
+        <li><a href="#experience">Erhvervserfaring</a></li>
+        <li><a href="#education">Uddannelse</a></li>
+        <li><a href="#skills">Kompetencer</a></li>
+        <li><a href="#projects">Projekter</a></li>
+      </ul>
+    </header>
+
+    <!-- Who Am I Sektion -->
+    <div class="whoami-background">
+      <div class="container">
+        <div class="profile-section" id="whoami">
+          <div class="profile-img">
+            <img src="/img/file.png" alt="Mit portræt" id="profile-pic" />
           </div>
-          <div class="card" id="card2">
+          <div class="personal-details">
+            <h2>Frederikke Volkdal</h2>
             <p>
-              A proactive 29-year-old person who thinks big and eager to learn
-              how to be a real nerd (coding ofc)
+              Jeg er en glad og smilende 29-årig mor med mange års erfaring
+              inden for kundeservice, hvor jeg har lært værdien af god
+              kommunikation og empati. Ønsket om at skifte spor førte mig til
+              multimediedesign, hvor jeg hurtigt opdagede en passion for
+              frontend-udvikling. Her kan jeg kombinere min interesse for design
+              med tekniske færdigheder og skabe brugervenlige løsninger. Jeg
+              søger nu nye muligheder inden for frontend, hvor jeg kan vokse og
+              gøre en forskel.
             </p>
-          </div>
-          <div class="card" id="card3">
-            <p>A mom for my beautiful daughter Olivia and dog Joey</p>
-          </div>
-          <div class="card" id="card4">
-            <p>Searching for an internship</p>
-          </div>
-          <div class="card" id="card5">
-            <p>Loves football and Taylor Swift</p>
-          </div>
-          <div class="card" id="card6">
-            <p>Worked in customerservice for a very long time</p>
+            <div class="flower-row">
+              <img
+                src="./img/flower.png"
+                alt="Decorative Flower"
+                class="flower"
+              />
+              <img
+                src="./img/flower2.png"
+                alt="Decorative Flower"
+                class="flower"
+              />
+              <img
+                src="./img/flower3.png"
+                alt="Decorative Flower"
+                class="flower"
+              />
+            </div>
           </div>
         </div>
       </div>
     </div>
 
-    <section id="experience">
-      <h2>Erhvervserfaring</h2>
+    <div class="info-cards">
+      <div class="card">Multimedia student at KEA</div>
+      <div class="card">Proaktiv og nysgerrig</div>
+      <div class="card">Mor til Olivia og hunden Joey</div>
+      <div class="card">Søger praktikplads</div>
+      <div class="card">Elsker fodbold og Taylor Swift</div>
+      <div class="card">Lang erfaring i kundeservice</div>
+    </div>
+
+    <!-- Erhvervserfaring Sektion med blomsterbillede -->
+    <section id="experience" class="experience-background">
       <div class="experience-content">
+        <h2>Erhvervserfaring</h2>
         <div class="job">
           <h3>MODU Toys (Studentermedhjælper)</h3>
           <p><strong>Kundeservice</strong> | 2024/5 - nu</p>
@@ -60,21 +111,25 @@
           <p>Hjælp til kunder ved betalinger og brug af app/hjemmeside.</p>
         </div>
         <div class="job">
-          <h3>Mofibo (Kundesupport)</h3>
-          <p><strong>Kundesupporter</strong> | 2019/6 - 2022/3</p>
-          <p>Hjælp til brugere med betaling og app-anvendelse.</p>
+          <h3>Mofibo, Storytel (Kundesupport)</h3>
+          <p><strong>Fuldtidsstilling</strong> | 2019/6 - 2022/3</p>
+          <p>
+            Her sad jeg som kundesupporter, og hjalp brugerne med betaling,
+            anvendelse af app/hjemmeside samt bogforespørgsler.
+          </p>
         </div>
-        <div class="job">
-          <h3>Hi3G 3 Danmark (Teknisk Support)</h3>
-          <p><strong>Kundeservice</strong> | 2017/12 - 2019/6</p>
-          <p>Løsning af tekniske problemer og vejledning af kunder.</p>
-        </div>
+        <img
+          src="./img/flower.png"
+          alt="Decorative Flower"
+          class="decorative-flower"
+        />
       </div>
     </section>
 
+    <!-- Uddannelse Sektion med blomsterbillede -->
     <section id="education">
-      <h2>Uddannelse</h2>
       <div class="education-content">
+        <h2>Uddannelse</h2>
         <div class="edu">
           <h3>Multimediedesign</h3>
           <p>Københavns Erhvervsakademi KEA | 2023 - nu</p>
@@ -84,63 +139,93 @@
           <p>Afsluttet | 2015 – 2016</p>
         </div>
         <div class="edu">
-          <h3>Tårnby Gymnasium (STX)</h3>
-          <p>2011 – 2014</p>
+          <h3>Tårnby Gymnasium STX</h3>
+          <p>Afsluttet | 2011 – 2014</p>
         </div>
+        <img
+          src="./img/flower2.png"
+          alt="Decorative Flower"
+          class="decorative-flower"
+        />
       </div>
     </section>
 
+    <!-- Kompetencer Sektion med blomsterbillede -->
     <section id="skills">
-      <h2>Kompetencer</h2>
       <div class="skills-content">
-        <h3>Teknologiske færdigheder</h3>
+        <h2>Kompetencer</h2>
         <ul>
-          <li>HTML5, CSS3, JavaScript</li>
+          <li>HTML, CSS</li>
+          <li>Javascript</li>
           <li>Tailwind CSS</li>
           <li>Git, GitHub</li>
-          <li>Netlify Deployment</li>
-          <li>Figma (UI/UX)</li>
+          <li>Netlify</li>
+          <li>Next</li>
+          <li>React</li>
+          <li>Figma</li>
         </ul>
+        <img
+          src="./img/flower3.png"
+          alt="Decorative Flower"
+          class="decorative-flower"
+        />
+      </div>
+    </section>
 
-        <h3>Sproglige færdigheder</h3>
-        <ul>
-          <li>Dansk (Flydende)</li>
-          <li>Engelsk (Flydende)</li>
-          <li>Tysk (Forståelse)</li>
-          <li>Svensk (Forståelse)</li>
-        </ul>
+    <section id="projects">
+      <div class="project-content">
+        <h2>Projekter</h2>
+        <div class="project-gallery">
+          <div class="project-item">
+            <img
+              src="/img/projekt1.png"
+              alt="Preview of Figma Design Project"
+              class="project-preview"
+            />
+            <div class="project-info">
+              <p><strong>Figma Design to Code</strong></p>
+              <p>
+                Dette projekt involverede at omsætte et Figma design til en
+                funktionel hjemmeside.
+              </p>
+              <a href="https://figmadesign-front.netlify.app/" target="_blank"
+                >Se projektet her</a
+              >
+            </div>
+          </div>
+          <div class="project-item">
+            <img
+              src="/img/projekt2.png"
+              alt="Preview of Pakkeliste App"
+              class="project-preview"
+            />
+            <div class="project-info">
+              <p><strong>Pakkeliste App</strong></p>
+              <p>
+                En to-do app lavet som en pakkeliste, der hjælper med at holde
+                styr på hvad der skal pakkes.
+              </p>
+              <a
+                href="https://frederikkespakkeliste.netlify.app/"
+                target="_blank"
+                >Se projektet her</a
+              >
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
     <footer id="contact">
       <div class="footer-content">
-        <h3>Contact</h3>
+        <h3>Kontakt</h3>
         <p>
           Email:
           <a href="mailto:frederikkevolkdal@gmail.com"
             >frederikkevolkdal@gmail.com</a
           >
         </p>
-        <p>Telephone: <a href="tel:+4512345678">+45 42 66 45 96</a></p>
-        <ul class="footer-links">
-          <li>
-            <a
-              href="https://www.linkedin.com/in/frederikke-volkdal-827bb5103/"
-              target="_blank"
-              >LinkedIn</a
-            >
-          </li>
-          <li>
-            <a href="https://github.com/frederikkevo" target="_blank">GitHub</a>
-          </li>
-          <li>
-            <a
-              href="https://app.netlify.com/teams/frederikkevo/sites"
-              target="_blank"
-              >Netlify</a
-            >
-          </li>
-        </ul>
+        <p>Telefon: <a href="tel:+4512345678">+45 42 66 45 96</a></p>
       </div>
       <p>&copy; 2024 Frederikke Volkdal</p>
     </footer>

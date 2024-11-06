@@ -1,138 +1,252 @@
-* {
-    margin: 1px;
-    padding: 10px;
-    box-sizing: border-box;
-}
-
+/* Fastsiddende Blomstret Baggrund for Hele Sitet */
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: #F0E5CF; 
-    color: #333;
+    background: url('./img/flowersbg.png') no-repeat center top;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
+
+/* Scroll Up Knappen */
+#scrollUpBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 15px;
+    font-size: 20px;
+    background-color: #b4aea8b3;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+}
+
+#scrollUpBtn:hover {
+    background-color: #a3b4c3;
+}
+
+/* Erhvervserfaring Sektion */
+.experience-background {
+    padding: 60px 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+
+
+/* Profilsektion */
 .container {
-    text-align: center;
-    margin-top: 50px;
-}
-
-h1 {
-    font-size: 3em;
-    color: #466d1d;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 2000px;
+    margin: auto;
+    background-color: #d2cbc5b6;
+    border-radius: 8px;
 }
 
 .profile-section {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 30px;
-}
-
-.profile-img {
-    position: relative;
+    width: 80%;
+    max-width: 1200px;
+    align-items: stretch;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.081);
+    border-radius: 8px;
+    overflow: hidden;
+    padding: 20px;
     margin-bottom: 40px;
 }
 
-#profile-pic {
-    width: 250px; 
-    height: auto;
-    border-radius: 50%;
-    border: 6px solid #6C584C; 
-}
-
-#name {
-    font-size: 1.8em;
-    margin-top: 15px;
-    color: #6C584C;
-}
-
-.info-cards {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    gap: 20px;
-    max-width: 800px;
-}
-
-.card {
-    background-color: #a1bb95; 
-    border-radius: 10px;
-    padding: 20px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease-in-out;
+/* Billede med hvid baggrund */
+.profile-img {
+    flex: 1;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 20px;
+}
+
+#profile-pic {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 0;
+}
+
+/* Tekstområde */
+.personal-details {
+    flex: 1;
+    color: #2d2a2a;
+    padding: 20px;
+    font-size: 1.2em;
+    line-height: 1.6;
+}
+
+.personal-details h2 {
+    font-size: 2em;
+    color: #181b1e;
+    margin-bottom: 10px;
+}
+
+/* Fakta Kasser */
+.info-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px; 
+    max-width: 900px; 
+    margin: 40px auto; 
+}
+
+.card {
+    background-color: #a3b4c3;
+    color: #4c5a65;
+    border-radius: 4px; 
+    padding: 40px 20px; 
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); 
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+    text-align: center;
+    cursor: pointer;
 }
 
 .card:hover {
     transform: scale(1.05);
+    background-color: #6e7d8a;
 }
 
-.card p {
-    color: #333;
+
+/* Sektioner for Uddannelse, Kompetencer og Projekter */
+
+
+section {
+    padding: 40px 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+/* Styling til h2 for sektionerne */
+section h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #6e7d8a;
+    text-align: center;
+}
+
+
+
+/* Indhold i hver sektion */
+.experience-content, .education-content, .skills-content, .project-content {
+    margin-top: 20px;
+    background: linear-gradient(to bottom right, #d2cbc5 50%, #f7f4ef 50%);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 1;
+}
+
+.flower-row {
+    display: flex;
+    justify-content: center;
+    gap: 25px; 
+    margin-top: 20px;
+}
+
+.flower {
+    width: 80px; 
+    height: auto;
+    opacity: 0.9; 
+    transition: transform 0.3s ease;
+}
+
+
+.decorative-flower {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    width: 100px;
+    opacity: 0.8;
+}
+
+/* Job og Uddannelsesindhold */
+.job, .edu {
+    margin-bottom: 15px;
+}
+
+.job h3, .edu h3 {
+    color: #4c5a65;
+    font-size: 1.3em;
+}
+
+.job p, .edu p, .skills-content ul {
     font-size: 1.1em;
+    color: #555;
 }
 
-.about-content {
-    max-width: 600px;
-    text-align: left;
+/* Styling af list i kompetencer */
+.skills-content ul {
+    list-style-type: disc;
+    padding-left: 20px;
 }
 
-h2 {
-    color: #113d1b;
-    margin-top: 40px;
-    font-size: 2em; }
+/* Projektsektion */
+.project-gallery {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+    gap: 20px;
+    padding: 20px;
+}
 
+.project-item {
+    text-align: center;
+    background: #e4e0ddb4;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
 
-    .experience-content, .education-content, .skills-content {
-        margin-top: 20px;
-        text-align: left;
-        max-width: 800px;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    
-    .job, .edu {
-        margin-bottom: 15px;
-    }
-    
-    .job h3, .edu h3 {
-        color: #0b3f0f; 
-    }
+.project-preview {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    border-radius: 8px;
+}
 
-.footer-content {
-    background-color: #969f83; 
+.project-info p {
+    color: #4c5a65;
+    margin-top: 10px;
+}
+
+.project-info a {
+    color: #6e7d8a;
+    text-decoration: none;
+}
+
+.project-info a:hover {
+    text-decoration: underline;
+}
+
+/* Footer styling */
+footer {
+    background-color: #6e7d8a;
     color: white;
     padding: 20px;
     text-align: center;
 }
 
 .footer-content {
-    background-color: #7c8476; 
+    margin-bottom: 10px;
+}
+
+.footer-content a {
     color: white;
-    padding: 20px;
-    text-align: center;
-}
-
-.footer-links {
-    list-style-type: none;
-    padding: 0;
-}
-
-.footer-links li {
-    display: inline;
-    margin: 0 10px;
-}
-
-.footer-links a {
-    color: white; 
-    text-decoration: none; 
-}
-
-.footer-links a:hover {
-    color: #cdeac0; 
+    text-decoration: none;
 }
 
 footer p {
-    margin-top: 10px;
+    margin: 0;
 }

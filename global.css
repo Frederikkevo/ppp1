@@ -1,0 +1,105 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #F8F9FA;
+    color: #333;
+    margin: 0;
+}
+
+
+header {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: transparent;
+    z-index: 10;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.burger-menu {
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.social-icon-large {
+    width: 40px;
+    height: 40px;
+    background: rgb(181, 169, 169);
+}
+
+/* Dropdown-menu styling */
+.nav-links {
+    display: none;
+    list-style-type: none;
+    position: absolute;
+    top: 50px;
+    left: 20px;
+    background-color: rgb(181, 169, 169);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.nav-links.visible {
+    display: block;
+}
+
+.nav-links li {
+    margin: 10px 0;
+}
+
+.nav-links li a {
+    color: #333;
+    text-decoration: none;
+    font-size: 1.2em;
+    position: relative;
+    display: inline-block;
+    padding: 5px 0;
+}
+
+
+.nav-links li a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: #333; 
+    transition: width 0.3s ease;
+}
+
+
+.nav-links li a:hover::after {
+    width: 100%; 
+}
+
+
+/* Footer styling */
+footer {
+    background-color: #0077b6;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-content {
+    margin-bottom: 10px;
+}
+
+.footer-content a {
+    color: white;
+    text-decoration: none;
+}
+
+footer p {
+    margin: 0;
+}
