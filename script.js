@@ -7,20 +7,17 @@ document.addEventListener("DOMContentLoaded", () => {
     const burgerMenu = document.getElementById('burger-menu');
     const navLinks = document.getElementById('nav-links');
 
-    // Åbn og luk menuen ved klik på burger-menuen
-    burgerMenu.addEventListener('click', (event) => {
-        navLinks.classList.toggle('visible');
-        event.stopPropagation(); 
+    // Åbn menuen, når der hover over burger-menuen
+    burgerMenu.addEventListener('mouseenter', () => {
+        navLinks.classList.add('visible');
     });
 
-    // Luk menuen, hvis der klikkes uden for den
-    document.addEventListener('click', (event) => {
-        const isClickInsideMenu = navLinks.contains(event.target);
-        const isClickOnBurger = burgerMenu.contains(event.target);
-
-        if (!isClickInsideMenu && !isClickOnBurger) {
+    // Luk menuen, når musen forlader både burger-menuen og nav-links
+    burgerMenu.addEventListener('mouseleave', () => {
+        // Tjek, om musen også er uden for navLinks
+        navLinks.addEventListener('mouseleave', () => {
             navLinks.classList.remove('visible');
-        }
+        });
     });
 });
 

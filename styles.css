@@ -6,26 +6,6 @@ body {
 }
 
 
-/* Scroll Up Knappen */
-#scrollUpBtn {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    padding: 10px 15px;
-    font-size: 20px;
-    background-color: #b4aea8b3;
-    color: white;
-    border: none;
-    border-radius: 50%;
-    cursor: pointer;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    transition: background-color 0.3s ease;
-}
-
-#scrollUpBtn:hover {
-    background-color: #a3b4c3;
-}
-
 /* Erhvervserfaring Sektion */
 .experience-background {
     padding: 60px 20px;
@@ -100,7 +80,7 @@ body {
 
 .card {
     background-color: #a3b4c3;
-    color: #4c5a65;
+    color: #1f2428;
     border-radius: 4px; 
     padding: 40px 20px; 
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); 
