@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // Åbn og luk menuen ved klik på burger-menuen
     burgerMenu.addEventListener('click', (event) => {
         navLinks.classList.toggle('visible');
-        event.stopPropagation(); // Forhindrer klik-eventet i at sprede sig til document
+        event.stopPropagation(); 
     });
 
     // Luk menuen, hvis der klikkes uden for den
